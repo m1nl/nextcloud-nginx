@@ -4,7 +4,7 @@ RUN set -eux; \
   apk add --update --no-cache \
     gomplate
 
-ARG NEXTCLOUD_VERSION=25.0.5
+ARG NEXTCLOUD_VERSION=26.0.0
 
 RUN set -eux; \
   curl -sSL https://download.nextcloud.com/server/releases/nextcloud-$NEXTCLOUD_VERSION.tar.bz2 -o /tmp/nextcloud-$NEXTCLOUD_VERSION.tar.bz2; \
